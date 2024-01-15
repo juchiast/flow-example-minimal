@@ -6,6 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.25",
+    "@solana/web3.js": "^1.88.0",
+    "bs58": "^5.0.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
