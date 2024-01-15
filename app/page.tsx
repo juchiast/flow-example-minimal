@@ -44,7 +44,13 @@ const StartFlowButton: FC = () => {
           const solMsg = Message.from(buffer);
           const tx = Transaction.populate(solMsg);
           const signedTx = await signTransaction(tx);
-          console.log(tx, signedTx);
+          console.log(event.req_id, tx, signedTx);
+          const before = tx.serializeMessage();
+          const after = signedTx.serializeMessage();
+          if (!before.equals(after)) {
+            alert("tx changed");
+            return;
+          }
           const signature = signedTx.signatures.find((ele) =>
             ele.publicKey.equals(pk)
           ).signature;
