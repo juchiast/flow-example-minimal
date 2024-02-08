@@ -20,6 +20,9 @@ dependencies:
   '@solana/web3.js':
     specifier: ^1.88.0
     version: 1.88.0
+  '@space-operator/client':
+    specifier: ^0.6.0
+    version: link:../flow-api
   bs58:
     specifier: ^5.0.0
     version: 5.0.0
